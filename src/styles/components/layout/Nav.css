@@ -1,0 +1,24 @@
+.nav-link :active {
+	color: aliceblue;
+}
+
+nav.navbar-light .navbar-brand {
+	color: rgb(222, 28, 28);
+}
+
+nav.navbar-light .navbar-brand:hover {
+	color: red
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+	color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: aliceblue;
+}
+
+.btn-primary {
+	background-color: rgb(84, 80, 80);
+}
