@@ -7,4 +7,5 @@ const Header = (Props) => {
           
     );
 }
-export default Header
+export default Header;
+

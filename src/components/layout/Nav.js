@@ -27,7 +27,7 @@ const Nav = () => {
         <>
             <MDBNavbar expand='lg' light bgColor='dark'>
                 <MDBContainer fluid>
-                    <MDBNavbarBrand href='#'>NETFLIX</MDBNavbarBrand>
+                    <MDBNavbarBrand href='/HomePage'>NETFLIX</MDBNavbarBrand>
                     <MDBNavbarToggler
                         type='button'
                         data-target='#navbarTogglerDemo02'

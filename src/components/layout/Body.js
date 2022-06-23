@@ -9,7 +9,7 @@ const Body = (Props) => {
         <div className='container-fluid' >
             <div className="row">
                 <div className="col-sm-12">
-                    <h3>New Arrivals</h3>
+                    <h3>NEW ARRIVALS</h3>
                 </div>
             </div>
             <div className="row">
@@ -18,11 +18,11 @@ const Body = (Props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://image.tmdb.org/t/p/original/i6muUaTPb4D6cQxlClzw4SL6abs.jpg"
+                                src="https://www.poblanerias.com/wp-content/archivos/2014/05/xmen.jpg"
                                 alt="First slide"
                             />
                             <Carousel.Caption>
-                                <h3>First slide label</h3>
+                                <h3>#1</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -33,18 +33,18 @@ const Body = (Props) => {
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
-                                <h3>Second slide label</h3>
+                                <h3>#2</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2020/07/x-men-movies-social-featured.jpg"
+                                src="https://1.bp.blogspot.com/-z7jketJFwCk/XrDay0KSVWI/AAAAAAAABa4/IF9TVxq1YR4Kr5EPox_FW4-3JuGOJdzzQCLcBGAsYHQ/w1200-h630-p-k-no-nu/Iron_Man_1_Portada.png"
                                 alt="Third slide"
                             />
                             <Carousel.Caption>
-                                <h3>Third slide label</h3>
+                                <h3>#3</h3>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -52,6 +52,9 @@ const Body = (Props) => {
                 </div>
             </div>
         </div>
+
+            
+
     );
 }
 export default Body;

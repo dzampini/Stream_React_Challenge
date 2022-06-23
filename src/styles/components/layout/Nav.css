@@ -3,11 +3,13 @@
 }
 
 nav.navbar-light .navbar-brand {
-	color: rgb(222, 28, 28);
+	color: red;
+	font-size: 1,5em;
+	letter-spacing: 3pt;
 }
 
 nav.navbar-light .navbar-brand:hover {
-	color: red
+	color: rgb(222, 28, 28);
 }
 
 
