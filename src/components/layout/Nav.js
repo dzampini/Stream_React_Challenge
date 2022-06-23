@@ -43,7 +43,7 @@ const Nav = () => {
                             <MDBNavbarItem>
                                 <MDBNavbarLink active aria-current='' href='/HomePage'>Home</MDBNavbarLink>
                             </MDBNavbarItem>
-                            <MDBNavbarItem>
+                            <MDBNavbarItem >
                                 <MDBNavbarLink href='/Link'>Link</MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
