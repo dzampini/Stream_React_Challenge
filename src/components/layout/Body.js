@@ -18,7 +18,7 @@ const Body = (Props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://www.poblanerias.com/wp-content/archivos/2014/05/xmen.jpg"
+                                src="https://i0.wp.com/thetangential.com/wp-content/uploads/2018/09/thor-movie.jpg?fit=1200%2C900"
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -29,7 +29,7 @@ const Body = (Props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/09/SpiderMan.jpg"
+                                src="http://i.ytimg.com/vi/7MMhBvB-2Mo/maxresdefault.jpg"
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
