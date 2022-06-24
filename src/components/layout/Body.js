@@ -69,51 +69,51 @@ const Body = (Props) => {
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="http://2.bp.blogspot.com/-WMRGS3M2mSs/VDA_Mx1R4YI/AAAAAAAADtw/toTPfOkbeOs/s1600/1.jpg"
                     class="img-thumbnail4"
                     alt="Hollywood Sign on The Hill"
                 />
             </div>
             <div class="contenedor2">
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://i.pinimg.com/474x/ab/99/38/ab993826f224afa01c9ab6bec38737a2--breaking-bad-poster-walter-white.jpg"
                     class="img-thumbnail1"
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://2.bp.blogspot.com/-PjKbCqijTzs/WgiVT8g6S-I/AAAAAAAAA70/mfkqFW3S6-0x9Kp3SlHwpf7dJ2RuH-omwCLcBGAs/s1600/Portada+PB+S4b.jpg"
                     class="img-thumbnail2"
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://cinecalidad.in/wp-content/uploads/2020/04/vikingos-10903-poster-683x1024.jpg"
                     class="img-thumbnail3"
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://i.pinimg.com/736x/d0/23/f8/d023f80de2fc5c14d448efee9c6993d6.jpg"
                     class="img-thumbnail4"
                     alt="Hollywood Sign on The Hill"
                 />
             </div>
             <div class="contenedor3">
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://i.pinimg.com/originals/67/c9/33/67c93324718f5ee5cf48eac989d1f89d.jpg"
                     class="img-thumbnail1"
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://img.repelis.id/cover/suits.jpg"
                     class="img-thumbnail2"
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://storage.googleapis.com/isnottv_cine/lv_seo_items/lv_9ee10ed84fa88ba180a0f5624e852ff0_420.jpg"
                     class="img-thumbnail3"
                     alt="Hollywood Sign on The Hill"
                 />
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    src="https://es.web.img3.acsta.net/pictures/16/03/10/09/39/100264.jpg"
                     class="img-thumbnail4"
                     alt="Hollywood Sign on The Hill"
                 />
