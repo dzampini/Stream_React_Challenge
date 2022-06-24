@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import axios from "axios";
 import '../../styles/components/layout/Nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
@@ -54,7 +52,7 @@ const Nav = () => {
                         </MDBNavbarNav>
                         <form className='d-flex input-group w-auto'>
                             <input type='search' className='form-control' placeholder='Enjoy Search' aria-label='Search' />
-                            <MDBBtn color='primary'>Search</MDBBtn>
+                            <MDBBtn color="secondary">Search</MDBBtn>
                         </form>
                     </MDBCollapse>
                 </MDBContainer>
