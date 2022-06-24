@@ -41,10 +41,10 @@ const Nav = () => {
                     <MDBCollapse navbar show={showNavNoTogglerSecond}>
                         <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
                             <MDBNavbarItem>
-                                <MDBNavbarLink active aria-current='' href='/HomePage'>Home</MDBNavbarLink>
+                                <MDBNavbarLink active aria-current='' href='/HomePage'><h6>Home</h6></MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem >
-                                <MDBNavbarLink href='/Link'>Link</MDBNavbarLink>
+                                <MDBNavbarLink href='/Link'><h6>Link</h6></MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
@@ -53,7 +53,7 @@ const Nav = () => {
                             </MDBNavbarItem>
                         </MDBNavbarNav>
                         <form className='d-flex input-group w-auto'>
-                            <input type='search' className='form-control' placeholder='Enjoy Searching' aria-label='Search' />
+                            <input type='search' className='form-control' placeholder='Enjoy Search' aria-label='Search' />
                             <MDBBtn color='primary'>Search</MDBBtn>
                         </form>
                     </MDBCollapse>
