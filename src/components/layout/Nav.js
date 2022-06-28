@@ -1,8 +1,7 @@
 import '../../styles/components/layout/Nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from 'react';
-import {
-    MDBNavbar,
+import { useState } from "react";
+import {MDBNavbar,
     MDBContainer,
     MDBNavbarBrand,
     MDBNavbarToggler,
@@ -13,14 +12,14 @@ import {
     MDBIcon,
     MDBNavbarNav,
 } from 'mdb-react-ui-kit';
-
+import Arraymovies from './Movies';
 
 
 const Nav = () => {
 
-
     const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
-
+    
+        
     return (
         <>
             <MDBNavbar expand='lg' light bgColor='dark'>
@@ -52,11 +51,13 @@ const Nav = () => {
                         </MDBNavbarNav>
                         <form className='d-flex input-group w-auto'>
                             <input type='search' className='form-control' placeholder='Enjoy Search' aria-label='Search' />
-                            <MDBBtn color="secondary">Search</MDBBtn>
+                            <MDBBtn color="secondary"> Search</MDBBtn>
                         </form>
                     </MDBCollapse>
                 </MDBContainer>
             </MDBNavbar>
+
+            
         </>
 
 
