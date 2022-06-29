@@ -19,6 +19,10 @@ const Nav = () => {
 
     const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
     
+    const boton = document.getElementById("boton");
+
+   
+    
         
     return (
         <>
@@ -51,7 +55,7 @@ const Nav = () => {
                         </MDBNavbarNav>
                         <form className='d-flex input-group w-auto'>
                             <input type='search' className='form-control' placeholder='Enjoy Search' aria-label='Search' />
-                            <MDBBtn color="secondary"> Search</MDBBtn>
+                            <MDBBtn color="secondary" id='boton'> Search</MDBBtn>
                         </form>
                     </MDBCollapse>
                 </MDBContainer>

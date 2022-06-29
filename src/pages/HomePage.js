@@ -7,6 +7,7 @@ const HomePage = () => {
 
     const movies = fetchMovies();
 
+
     return (
         <main>
             <body>

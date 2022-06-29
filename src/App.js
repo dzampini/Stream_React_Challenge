@@ -9,14 +9,14 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   
-  
+ 
+
   return (
 
     <Router>
       <Nav />
       <Body />
-      
-      <Route path="/" exact component={HomePage} />
+       <Route path="/" exact component={HomePage} />
       
     </Router>
 
