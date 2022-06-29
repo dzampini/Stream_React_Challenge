@@ -4,7 +4,7 @@ import Nav from "./components/layout/Nav";
 import Body from "./components/layout/Body";
 import HomePage from "./pages/HomePage";
 
-
+//Controler con llamado a Nav y Body
 
 
 function App() {

@@ -1,3 +1,5 @@
+// consulta y llamada de API
+
 const fetchMovies = () => {
     const initialurl = "https://imdb-api.com/en/API/Search/k_n8tf6v7z/shrek";
     let results = [];

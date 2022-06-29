@@ -2,6 +2,7 @@ import '../../src/styles/components/pages/HomePage.css'
 import Arraymovies from '../components/layout/Movies';
 import fetchMovies from '../components/layout/listMovies';
 
+// Paso de String al mapeo de la Api
 
 const HomePage = () => {
 
