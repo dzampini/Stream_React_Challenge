@@ -9,8 +9,8 @@ const Arraymovies = ({ arraymovies = [] }) => {
                     <div className="card" style={{ minwidth: "200px" }}>
                         <img src={item.image} alt=""></img>
                     </div>
+            
                 </div>
-
             })}
         </div>
     );
