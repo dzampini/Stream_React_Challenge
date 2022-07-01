@@ -1,6 +1,10 @@
 // consulta y llamada de API
 import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
+import fetchMovies from './Movies';
+import Arraymovies from './Movies';
+
+const movies = fetchMovies();
 
 
 export default class NameForm extends React.Component {
@@ -17,14 +21,18 @@ export default class NameForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
+        <div key={movies} className="col">
+            <div className="card" style={{ minwidth: "200px" }}>
+                <img src={movies.image} alt=""></img>
+            </div>
+        </div>
         event.preventDefault();
     }
     render() {
         return (
                 <form className='d-flex input-group w-auto' onSubmit={this.handleSubmit}>
                    <input type='search' className='form-control' value={this.state.value} onChange={this.handleChange} placeholder='Enjoy Search' aria-label='Search' />
-                   <MDBBtn color="secondary" id='nameForm'> Search</MDBBtn>
+                <MDBBtn color="secondary" id='nameForm'> Search</MDBBtn>
                 </form>
               
         );

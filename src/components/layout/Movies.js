@@ -1,7 +1,7 @@
 // Mapeo de Api
 
 const fetchMovies = () => {
-    const initialurl = "https://imdb-api.com/en/API/Search/k_n8tf6v7z/shrek";
+    const initialurl = "https://imdb-api.com/en/API/Search/k_x148yu49/shrek";
 
     fetch(initialurl)
         .then(response => response.json())
@@ -10,7 +10,6 @@ const fetchMovies = () => {
             return data.results
         })
         .catch(error => console.log(error))
-
 
 
     const Arraymovies = ({ arraymovies = [] }) => {
