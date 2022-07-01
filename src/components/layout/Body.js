@@ -1,12 +1,16 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
+import Arraymovies from '../layout/Movies'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/components/layout/Body.css'
+import '../../styles/components/layout/Body.css';
 
 
 
 const Body = (Props) => {
-
+   
+   
+    
+   
     return (
 
         <div className='container-fluid' >
@@ -56,9 +60,12 @@ const Body = (Props) => {
             </div>
             
 
-            </div>
+        </div>
+        
+        
 
             
     );
+   
 }
 export default Body;

@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Arraymovies from './components/layout/Movies';
+import fetchMovies from './components/layout/listMovies';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const movies = fetchMovies();
 root.render(
   <React.StrictMode>
     <App />
+    <div className='row'>
+      <Arraymovies arraymovies={movies} />
+
+    </div>
+  
   </React.StrictMode>
 );
 

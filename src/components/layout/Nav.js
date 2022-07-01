@@ -12,18 +12,17 @@ import {MDBNavbar,
     MDBIcon,
     MDBNavbarNav,
 } from 'mdb-react-ui-kit';
-import Arraymovies from './Movies';
+
+
+
 
 
 const Nav = () => {
 
     const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
     
-    const boton = document.getElementById("boton");
-
    
-    
-        
+       
     return (
         <>
             <MDBNavbar expand='lg' light bgColor='dark'>
