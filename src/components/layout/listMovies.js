@@ -1,4 +1,4 @@
-// consulta y llamada de API
+// manejo de evento
 import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import fetchMovies from './Movies';

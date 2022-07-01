@@ -1,4 +1,4 @@
-// Mapeo de Api
+// consulta y Mapeo de Api
 
 const fetchMovies = () => {
     const initialurl = "https://imdb-api.com/en/API/Search/k_x148yu49/shrek";
