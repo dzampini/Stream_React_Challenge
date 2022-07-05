@@ -3,8 +3,8 @@ import Arraymovies from "./Mapeo";
 
 
 const fetchMovies = () => {
-    
-    const initialurl = "https://imdb-api.com/en/API/SearchMovie/k_x148yu49/rambo";
+
+    const initialurl = "https://imdb-api.com/en/API/Search/k_n8tf6v7z/shrek";
 
     fetch(initialurl)
         .then(response => response.json())
@@ -17,7 +17,7 @@ const fetchMovies = () => {
 
 return (<>
 
-    <fetchMovies Arraymovies= >
+    <Arraymovies/>
     
 </>)
 
