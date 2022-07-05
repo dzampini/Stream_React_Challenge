@@ -1,10 +1,10 @@
-// manejo de evento
+// consulta y llamada de API
 import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import fetchMovies from './Movies';
-import Arraymovies from './Movies';
+import Arraymovies from './Mapeo';
 
-const movies = fetchMovies();
+const movies = Arraymovies();
 
 
 export default class NameForm extends React.Component {
@@ -30,13 +30,12 @@ export default class NameForm extends React.Component {
     }
     render() {
         return (
-                <form className='d-flex input-group w-auto' onSubmit={this.handleSubmit}>
-                   <input type='search' className='form-control' value={this.state.value} onChange={this.handleChange} placeholder='Enjoy Search' aria-label='Search' />
+            <form className='d-flex input-group w-auto' onSubmit={this.handleChange}>
+                <input type='search' className='form-control' value={this.state.value} onChange={this.handleSubmit} placeholder='Enjoy Search' aria-label='Search' />
                 <MDBBtn color="secondary" id='nameForm'> Search</MDBBtn>
-                </form>
-              
+            </form>
+
         );
     }
 }
-
 

@@ -1,7 +1,10 @@
-// consulta y Mapeo de Api
+// Mapeo de Api
+import Arraymovies from "./Mapeo";
+
 
 const fetchMovies = () => {
-    const initialurl = "https://imdb-api.com/en/API/Search/k_x148yu49/shrek";
+    
+    const initialurl = "https://imdb-api.com/en/API/SearchMovie/k_x148yu49/rambo";
 
     fetch(initialurl)
         .then(response => response.json())
@@ -12,21 +15,11 @@ const fetchMovies = () => {
         .catch(error => console.log(error))
 
 
-    const Arraymovies = ({ arraymovies = [] }) => {
+return (<>
 
-        return (
-            <div className='row'>
-                {arraymovies.map((item, index) => {
-                    <div key={index} className="col">
-                        <div className="card" style={{ minwidth: "200px" }}>
-                            <img src={item.image} alt=""></img>
-                        </div>
-            
-                    </div>
-                })}
-            </div>
-        );
-    }
+    <fetchMovies Arraymovies= >
+    
+</>)
 
 }
 

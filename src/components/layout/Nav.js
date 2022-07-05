@@ -1,7 +1,7 @@
 import '../../styles/components/layout/Nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
-import Arraymovies from './Movies';
+
 
 import {MDBNavbar,
     MDBContainer,
