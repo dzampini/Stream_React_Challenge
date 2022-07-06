@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Nav from "./components/layout/Nav";
 import Body from "./components/layout/Body";
 import HomePage from "./pages/HomePage";
-import NameForm from "./components/layout/listMovies"
+import NameForm from './components/layout/listMovies';
 //Controler con llamado a Nav y Body
 
 

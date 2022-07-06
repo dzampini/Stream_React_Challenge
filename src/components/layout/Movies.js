@@ -1,10 +1,9 @@
 // Mapeo de Api
-import Arraymovies from "./Mapeo";
+const FetchMovies = () => {
 
-
-const fetchMovies = () => {
-
+   
     const initialurl = "https://imdb-api.com/en/API/Search/k_n8tf6v7z/shrek";
+
 
     fetch(initialurl)
         .then(response => response.json())
@@ -15,12 +14,14 @@ const fetchMovies = () => {
         .catch(error => console.log(error))
 
 
+
 return (<>
 
-    <Arraymovies/>
+
+   
     
 </>)
 
 }
 
-export default fetchMovies;
+export default FetchMovies;

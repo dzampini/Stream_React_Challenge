@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    width: 200px;
+    height: 450px;
+}
