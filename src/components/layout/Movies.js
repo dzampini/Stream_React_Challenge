@@ -23,7 +23,7 @@ const ShowMovies = () => {
         setPelicula(data)
     }
 
-         console.log('hola mundo')
+    console.log('hola mundo')
 
     const Searcher = (e) => {
         setSearch(e.target.value)
@@ -37,19 +37,18 @@ const ShowMovies = () => {
          
            
 
-return (
-        <div>
-           
-                     <form className='d-flex input-group w-auto' onSubmit={pelicula}>
-                <input type='search' className='form-control' value={search} onChange={Searcher} placeholder='Enjoy Search' aria-label='Search' />
-                <MDBBtn color="secondary" id='nameForm'> Search</MDBBtn>
-            </form>
+    return (
+    
+        <div >
+            
+                 
+                     <form className='d-flex input-group w-auto' >
+                    <input type='search' className='form-control' value={search} onChange={Searcher} placeholder='Enjoy Search' aria-label='Search' />
+                    <MDBBtn color="secondary"  id='nameForm'> Search</MDBBtn>
+                </form>
 
                 </div>)
            
-
-    
-    
 
 
 }

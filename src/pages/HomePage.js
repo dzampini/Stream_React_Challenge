@@ -9,9 +9,7 @@ const HomePage = () => {
 
     return (
         <main>
-            <body>
-                
-            </body>
+            
 
         </main>
 
