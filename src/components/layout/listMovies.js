@@ -1,14 +1,12 @@
 // consulta y llamada de API
 import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
-import FetchMovies from './Movies';
-import Arraymovies from './Mapeo';
-
-
+import ShowMovies from "./Movies"
 
 
 
 export default class NameForm extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = { value: '' };
@@ -23,11 +21,11 @@ export default class NameForm extends React.Component {
 
     handleSubmit(event) {
         
-        let movies = FetchMovies({ Arraymovies });
+        let movies = ShowMovies();
             
             < div className = 'container' >
                 <div className="card" style={{ minwidth: "200px" }}>
-                    <img src={movies} alt=""></img>
+                    <img src= {movies}/>
                 </div>
             </div>
             
