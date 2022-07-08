@@ -1,56 +1,74 @@
 import { useEffect, useState } from "react";
-import { MDBBtn } from 'mdb-react-ui-kit';
-import e from "cors";
 
+import React from 'react';
 
 
 const ShowMovies = () => {
 
     
-    const [pelicula, setPelicula] = useState([]);
+    const [movies, setMovies] = useState([])
     const [search, setSearch] = useState('')
     
     //Api
     const initialurl = 'https://imdb-api.com/en/API/Search/k_n8tf6v7z/shrek'
     
     //Funcion que trae los datos de la Api
-   
-    const showdata = async () => {
-        
+  
+    const Showdata = async () => {
         const response = await fetch(initialurl)
         const data = await response.json()
-        console.log(data);
-        setPelicula(data)
-    }
 
-    console.log('hola mundo')
+        console.log(data);
+        movies(data)
+        
+        
+    }
+    //buscador
 
     const Searcher = (e) => {
+        
         setSearch(e.target.value)
-        console.log(e)
+        console.log(e.target.value)
        
     }
 
     useEffect(() => {
-        showdata()
+        Showdata()
     }, []);
          
-           
+  
 
     return (
-    
-        <div >
-            
-                 
-                     <form className='d-flex input-group w-auto' >
-                    <input type='search' className='form-control' value={search} onChange={Searcher} placeholder='Enjoy Search' aria-label='Search' />
-                    <MDBBtn color="secondary"  id='nameForm'> Search</MDBBtn>
-                </form>
+        
+        <div>
+          <input type='text' className='form-control' value={search} onChange={Searcher}  placeholder='Enjoy Search' aria-label='Search' />
 
-                </div>)
+            <table className='table table-striped table-hover mt-5 shadow-lg'>
+                <thead>
+                    <tr className='bg-curso text-white'>
+                        <th>Pelicula</th>
+                        <th>titulo</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                  {movies.map((movie)=>(
+                        <tr key={movie }>
+                        <td >{movie.id}</td>
+                        <td>{movie.title }</td>
+                        </tr>
+                   ) )}
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+         
+    )
            
 
 
 }
 
-export default ShowMovies;
+export default ShowMovies

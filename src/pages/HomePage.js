@@ -8,10 +8,7 @@ import '../../src/styles/components/pages/HomePage.css'
 const HomePage = () => {
 
     return (
-        <main>
-            
-
-        </main>
+        <></>
 
     );
 }
