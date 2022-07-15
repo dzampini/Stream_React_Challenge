@@ -1,8 +1,15 @@
-.container{
+.tbody{
     display: flex;
     flex-direction: row;
+    
+   
 }
-.card{
+
+.image{
+    
+    justify-content: space-between;
     width: 200px;
     height: 450px;
+    
+
 }

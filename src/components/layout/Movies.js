@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import '../../styles/components/layout/Movies.css'
 
 import React from 'react';
 
@@ -10,7 +11,8 @@ const ShowMovies = () => {
     const [search, setSearch] = useState('')
     
     //Api
-    const initialurl = 'https://imdb-api.com/en/API/Search/k_n8tf6v7z/shrek'
+    const initialurl = "https://imdb-api.com/en/API/Search/k_x148yu49/movies"
+
     
     //Funcion que trae los datos de la Api
   
@@ -19,7 +21,7 @@ const ShowMovies = () => {
         const data = await response.json()
 
         console.log(data);
-        movies(data)
+        setMovies(data.results)
         
         
     }
@@ -33,7 +35,7 @@ const ShowMovies = () => {
     }
 
     useEffect(() => {
-        Showdata()
+       
     }, []);
          
   
@@ -42,7 +44,7 @@ const ShowMovies = () => {
         
         <div>
           <input type='text' className='form-control' value={search} onChange={Searcher}  placeholder='Enjoy Search' aria-label='Search' />
-
+            <button onClick={Showdata}>Mostrar</button>
             <table className='table table-striped table-hover mt-5 shadow-lg'>
                 <thead>
                     <tr className='bg-curso text-white'>
@@ -51,15 +53,20 @@ const ShowMovies = () => {
                        
                     </tr>
                 </thead>
+                 </table>
                 <tbody>
-                  {movies.map((movie)=>(
-                        <tr key={movie }>
-                        <td >{movie.id}</td>
-                        <td>{movie.title }</td>
-                        </tr>
-                   ) )}
+                    <div className='row'>
+            {movies.map((movie) => {
+                return (<div key={movie.id} className="col">
+                    <div className="card">
+                        <img className="image" src={movie.image} alt=""></img>
+                    </div>
+
+                </div>)
+            })}
+        </div>
                 </tbody>
-            </table>
+           
             
             
             
