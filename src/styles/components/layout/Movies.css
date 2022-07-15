@@ -13,3 +13,11 @@
     
 
 }
+
+.card .movieInfo{
+    display: none;
+}
+
+.card:hover .movieInfo {
+    display: block;
+}
