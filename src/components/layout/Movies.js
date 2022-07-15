@@ -11,13 +11,14 @@ const ShowMovies = () => {
     const [search, setSearch] = useState('')
     
     //Api
-    const initialurl = "https://imdb-api.com/en/API/Search/k_x148yu49/movies"
+    const initialurl = "https://imdb-api.com/en/API/SearchTitle/k_x148yu49/"
 
     
     //Funcion que trae los datos de la Api
   
     const Showdata = async () => {
-        const response = await fetch(initialurl)
+        const url = initialurl+search
+        const response = await fetch(url)
         const data = await response.json()
 
         console.log(data);
