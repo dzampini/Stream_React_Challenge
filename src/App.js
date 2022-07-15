@@ -15,9 +15,10 @@ function App() {
    
       <>
       <Nav />
+      <ShowMovies/>
       <Body />
       <Homepage/>
-      <ShowMovies/>
+      
       </>
        );
 }

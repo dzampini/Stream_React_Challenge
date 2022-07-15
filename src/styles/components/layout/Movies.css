@@ -1,17 +1,22 @@
 .tbody{
     display: flex;
     flex-direction: row;
-    
-   
 }
 
-.image{
+.buscador{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    place-content: center;
+    margin-left: 32em;
+    justify-content: space-between;
     
+}
+.image{
     justify-content: space-between;
     width: 200px;
     height: 200px;
-    
-
 }
 
 .card .movieInfo{
@@ -20,4 +25,5 @@
 
 .card:hover .movieInfo {
     display: block;
+    scale: 20px;
 }

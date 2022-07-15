@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
-import ShowMovies from "./Movies";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../../styles/components/layout/Body.css';
 
 
