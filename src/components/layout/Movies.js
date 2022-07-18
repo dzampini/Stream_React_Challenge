@@ -40,6 +40,8 @@ const ShowMovies = () => {
         setMovies(data.results)
     }
    
+    
+
     //buscador
 
     const Searcher = (e) => {
@@ -51,7 +53,7 @@ const ShowMovies = () => {
     //Mostrar info
 
     useEffect(() => {
-       
+          
     }, []);
    
     
@@ -85,37 +87,44 @@ const ShowMovies = () => {
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                         </MDBNavbarNav>
-                        <input  type='text' className='form-control' value={search} onChange={Searcher}  placeholder='Enjoy Search' aria-label='Search' />
+                        <input  type='text' className='form-control' value={search} onChange={Searcher}  placeholder='Find Movie' aria-label='Search' />
                 <MDBBtn onClick={Showdata} type="button" class="btn btn-light">Search</MDBBtn>
                                                 
                     </MDBCollapse>
                 </MDBContainer>
             </MDBNavbar>
 
-          
-            <table className='table table-striped table-hover mt-5 shadow-lg'>
-                <thead>
-                 <tr className='bg-curso text-white'>
-                    <th>Pelicula</th>
+
+            
                     
-                 </tr>
-          </thead>
-                </table>
-                   <tbody>
-                   <div className='row'>
-                       {movies.map((movie) => {
+                <thead>
+                 
+                </thead>
+                
+          
+            
+            <tbody>
+                
+                <div className='row'>
+                    
+                    {movies.map((movie) => {
+                           
                             return (<div key={movie.id} className="col">
-                                    <div className="movieInfo">{movie.title},{movie.description}
-                                    <div>
+
+                                
+                                <div className="container">
                                     <img className="image" src={movie.image} alt=""></img>
-                                    </div>
-                                    
-                                    </div>
+                                    <div className="info">
+                                        {movie.title},{movie.description}
+                                     </div> 
+                                </div>
+                                
                                 
                     </div>)
                       })}
-                    </div>
-                    </tbody>
+                </div>
+            </tbody>
+           
                     </div>
          
     )

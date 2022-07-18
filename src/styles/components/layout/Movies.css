@@ -1,6 +1,12 @@
 .tbody{
     display: flex;
     flex-direction: row;
+    
+}
+.giphy{
+    float: inline-end;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -8,57 +14,50 @@
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 
-
-
-.col{
+.resultadobusqueda{
     display: flex;
-    flex-direction: row;
-    position: relative;
+    border-bottom-left-radius: 25em;
+    border-bottom-right-radius: 25em;
+    border-top-left-radius: 25em;
+    border-top-right-radius: 25em;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.219);
 }
+
+
 
 .image {
-       display: flex;
-       flex-direction: row;
-       width: 250px;
-       height: 350px;
-       justify-content: center;
-       filter: opacity(0.7);
-   }
-    
-
-.movieInfo{
-    display: none;
-        flex-direction: column;
-       
-        justify-content: center;
-        
-   
+    display: flex;
+    flex-direction: row;
+    width:210px;
+    height: 320px;
+    justify-content: center;
+    filter: opacity(0.7);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.219);
+    margin-top: 2em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
-
 
 
 .image:hover  {
     display: flex;
     transition: 0.8s;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgba(90, 84, 84, 0.253);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.733);
+    
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     justify-content: center;
+    filter: opacity(0.7);
 }
 
-.movieInfo {
-    display: block;
-    flex-direction: column;
-    transition: 0.8s;
-
-    justify-content: center;
 
 
-}
 
 
 
