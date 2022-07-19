@@ -3,11 +3,6 @@
     flex-direction: row;
     
 }
-.giphy{
-    float: inline-end;
-    flex-direction: row;
-    justify-content: center;
-}
 
 
 .buscador{
@@ -28,6 +23,13 @@
 }
 
 
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 210px;
+    height: 320px;
+}
 
 .image {
     display: flex;
@@ -54,6 +56,13 @@
     transform: scale(1.05);
     justify-content: center;
     filter: opacity(0.7);
+}
+
+.info{
+    visibility:hidden;
+}
+.info:hover{
+    visibility: visible;
 }
 
 

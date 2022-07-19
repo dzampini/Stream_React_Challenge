@@ -1,16 +1,12 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
-
 import '../../styles/components/layout/Body.css';
 
 
 
 const Body = (Props) => {
    
-   
-    
-   
-    return (
+   return (
 
         <div className='container-fluid' >
             <div className="row">

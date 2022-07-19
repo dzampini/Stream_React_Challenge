@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import '../../styles/components/layout/Movies.css'
 import '../../styles/components/layout/Nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {MDBNavbar,
     MDBContainer,
     MDBNavbarBrand,
@@ -113,9 +114,10 @@ const ShowMovies = () => {
 
                                 
                                 <div className="container">
+                                    
                                     <img className="image" src={movie.image} alt=""></img>
                                     <div className="info">
-                                        {movie.title},{movie.description}
+                                        <h6>{movie.title},{movie.description}</h6>
                                      </div> 
                                 </div>
                                 
