@@ -3,9 +3,6 @@ import '../../styles/components/layout/Movies.css'
 import '../../styles/components/layout/Nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Spinner from 'react-bootstrap/Spinner';
-
-
-
 import {
     MDBNavbar,
     MDBContainer,
@@ -17,9 +14,7 @@ import {
     MDBIcon,
     MDBNavbarNav,
     MDBBtn
-   
 } from 'mdb-react-ui-kit';
-
 import React from 'react';
 
 
@@ -32,18 +27,21 @@ const ShowMovies = () => {
     const [loading, setLoading] = useState(false);
     
     //Api
+    
     const initialurl = "https://imdb-api.com/en/API/SearchTitle/k_x148yu49/"
 
-    
-    //Funcion que trae los datos de la Api
-  
     const Showdata = async () => {
+       
+        //Funcion que trae los datos de la Api
+
         const url = initialurl + search
         const response = await fetch(url)
         const data = await response.json()
         console.log(data);
         setMovies(data.results)
-                
+        
+        //Loading
+
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
@@ -51,9 +49,7 @@ const ShowMovies = () => {
     
         
     }
-    //Loading
    
-      
     //buscador
 
     const Searcher = (e) => {
@@ -67,9 +63,7 @@ const ShowMovies = () => {
     useEffect(() => {
           
     }, []);
-  
-    
-
+ 
     return (
         <div>
             <MDBNavbar expand='lg' light bgColor='dark'>
@@ -106,33 +100,17 @@ const ShowMovies = () => {
                     </MDBCollapse>
                 </MDBContainer>
             </MDBNavbar>
-
-
-            
-                    
-                <thead>
-                 
-                </thead>
-                
-          
-            
+             
             <tbody>
                 
-                <div className='row'>
-                     
-             
-                    
+                <div className='row'>                    
                     {movies.map((movie) => {
-
                         if (loading) {
                             return (<div>
                                 <Spinner animation="border" role="status" color="light"></Spinner>
-                            </div >)
-                        }
+                            </div >)}                        
                         else {
-                        
-                           
-                            return (<div key={movie.id} className="col">
+                              return (<div key={movie.id} className="col">
                                 <div className="container">
                                     <img className="image" src={movie.image} alt=""></img>
                                     <div className="info">
@@ -143,8 +121,7 @@ const ShowMovies = () => {
                         }
                         })}
                 </div>
-            </tbody>
-           
+            </tbody>           
                     </div>
          
     )
