@@ -4,7 +4,6 @@
     
 }
 
-
 .buscador{
     width: 200px;
     display: flex;
@@ -51,19 +50,14 @@
     display: flex;
     transition: 0.8s;
     box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.733);
-    
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     justify-content: center;
     filter: opacity(0.7);
 }
 
-.info{
-    visibility:hidden;
-}
-.info:hover{
-    visibility: visible;
-}
+
+
 
 
 

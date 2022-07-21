@@ -20,7 +20,6 @@ import React from 'react';
 
 const ShowMovies = () => {
 
-    
     const [movies, setMovies] = useState([])
     const [search, setSearch] = useState('')
     const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
@@ -45,9 +44,7 @@ const ShowMovies = () => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 5000);
-    
-        
+        }, 1000);
     }
    
     //buscador
