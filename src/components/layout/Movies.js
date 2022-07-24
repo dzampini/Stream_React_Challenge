@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import '../../styles/components/layout/Movies.css'
-import '../../styles/components/layout/Nav.css'
+import '../../styles/components/layout/Movies.css';
+import '../../styles/components/layout/Nav.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Spinner from 'react-bootstrap/Spinner';
 import {
@@ -12,8 +12,7 @@ import {
     MDBNavbarLink,
     MDBCollapse,
     MDBIcon,
-    MDBNavbarNav,
-    MDBBtn
+    MDBNavbarNav
 } from 'mdb-react-ui-kit';
 import React from 'react';
 
@@ -22,12 +21,12 @@ const ShowMovies = () => {
 
     const [movies, setMovies] = useState([])
     const [search, setSearch] = useState('')
-    const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
+    
     const [loading, setLoading] = useState(false);
     
     //Api
     
-    const initialurl = "https://imdb-api.com/en/API/SearchTitle/k_x148yu49/"
+    const initialurl = "https://imdb-api.com/en/API/SearchTitle/k_hs5hx6x8/"
 
     const Showdata = async () => {
        
@@ -72,11 +71,11 @@ const ShowMovies = () => {
                         aria-controls='navbarTogglerDemo02'
                         aria-expanded='false'
                         aria-label='Toggle navigation'
-                        onClick={() => setShowNavNoTogglerSecond(!showNavNoTogglerSecond)}
+                        
                     >
                         <MDBIcon icon='bars' fas />
                     </MDBNavbarToggler>
-                    <MDBCollapse navbar show={showNavNoTogglerSecond}>
+                    <MDBCollapse navbar>
                         <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
                             <MDBNavbarItem>
                                 <MDBNavbarLink  href='/HomePage'><h6>Home</h6></MDBNavbarLink>
@@ -92,7 +91,14 @@ const ShowMovies = () => {
                         </MDBNavbarNav>
                         <input type='text' className='form-control' value={search} onChange={Searcher} placeholder='Find Movie' aria-label='Search' />
                         
-                <MDBBtn onClick={Showdata} type="button" class="btn btn-light">Search</MDBBtn>
+                <button
+          className="btn btn-outline-primary"
+          type="button"
+                            data-mdb-ripple-color="dark"
+                            onClick={Showdata}
+        >
+          Search
+        </button>
                                                 
                     </MDBCollapse>
                 </MDBContainer>

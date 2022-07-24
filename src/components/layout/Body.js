@@ -51,8 +51,7 @@ const Body = (Props) => {
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
-                
-                    
+                          
 
                 </div>
                 
