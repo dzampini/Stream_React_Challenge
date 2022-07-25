@@ -108,18 +108,21 @@ const ShowMovies = () => {
                 
                 <div className='row'>                    
                     {movies.map((movie) => {
+                        console.log(movie);
                         if (loading) {
-                            return (<div>
+                            return (<div className="spinner">
                                 <Spinner animation="border" role="status" color="light"></Spinner>
                             </div >)}                        
                         else {
                               return (<div key={movie.id} className="col">
-                                <div className="container">
-                                    <img className="image" src={movie.image} alt=""></img>
+                                  
+                                      <div className="image">
+                                      <img className="image" src={movie.image} alt=""></img>
+                                      </div>
                                     <div className="info">
                                         <h6>{movie.title},{movie.description}</h6>
                                     </div>
-                                </div>
+                                
                             </div>)
                         }
                         })}

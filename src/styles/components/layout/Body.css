@@ -11,6 +11,8 @@
     height: 700px;
     margin-top: 3em;
     box-shadow: 0px 0px 20px 0px rgba(36, 35, 35, 0.733);
+    border-style: solid;
+    border-color: transparent;
 
 }
 
