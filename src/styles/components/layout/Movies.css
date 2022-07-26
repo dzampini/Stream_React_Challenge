@@ -17,9 +17,12 @@
 
 }
 
+
+
 .row .col{
+    
     margin-top: 2em;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .row .col .info{

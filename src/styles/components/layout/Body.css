@@ -8,8 +8,9 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 700px;
+    height: 690px;
     margin-top: 3em;
+    margin-right: 1em;
     box-shadow: 0px 0px 20px 0px rgba(36, 35, 35, 0.733);
     border-style: solid;
     border-color: transparent;

@@ -110,7 +110,7 @@ const ShowMovies = () => {
                     {movies.map((movie) => {
                         console.log(movie);
                         if (loading) {
-                            return (<div className="spinner">
+                            return (<div className="row">
                                 <Spinner animation="border" role="status" color="light"></Spinner>
                             </div >)}                        
                         else {
