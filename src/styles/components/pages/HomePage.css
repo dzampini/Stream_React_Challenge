@@ -6,3 +6,7 @@ body{
 body{
     background-color: rgb(93, 85, 85);
 }
+.clock{
+    width: 15px;
+    height: 15px;
+}

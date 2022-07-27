@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Clock from 'react-clock';
-import 'react-clock/dist/Clock.css';
+import '../../styles/components/layout/Clock.css';
 
 function MyClock() {
   const [value, setValue] = useState(new Date());
@@ -14,7 +14,7 @@ function MyClock() {
   }, []);
 
   return (
-    <div>
+    <div className='clock'>
        <Clock value={value} />
     </div>
   );

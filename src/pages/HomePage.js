@@ -1,14 +1,18 @@
 import '../../src/styles/components/pages/HomePage.css'
+import MyClock from '../components/layout/clock';
 
 
 
 
-// Paso de String al mapeo de la Api
 
 const HomePage = () => {
 
     return (
-        <></>
+        <body>
+            <div className='clock'>               
+             <MyClock />
+             </div>
+            </body>
 
     );
 }
