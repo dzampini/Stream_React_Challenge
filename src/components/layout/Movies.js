@@ -89,11 +89,11 @@ const ShowMovies = () => {
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                         </MDBNavbarNav>
-                        <input type='text' className='form-control' value={search} onChange={Searcher} placeholder='Find Movie' aria-label='Search' />
+                        <input type='search'  className='form-control' value={search} onChange={Searcher} placeholder='Find Movie' aria-label='Search' />
                         
                 <button
           className="btn btn-outline-primary"
-          type="button"
+          type="submit"
                             data-mdb-ripple-color="dark"
                             onClick={Showdata}
         >
